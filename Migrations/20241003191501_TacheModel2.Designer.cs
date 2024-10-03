@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TaskManagerRaph.Migrations
 {
     [DbContext(typeof(TaskContext))]
-    partial class TaskContextModelSnapshot : ModelSnapshot
+    [Migration("20241003191501_TacheModel2")]
+    partial class TacheModel2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,23 +24,6 @@ namespace TaskManagerRaph.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TaskManagerRaph.Models.Favoris", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("TaskId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Favorites");
-                });
-
             modelBuilder.Entity("TaskManagerRaph.Models.Tache", b =>
                 {
                     b.Property<int>("Id")
@@ -45,9 +31,6 @@ namespace TaskManagerRaph.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("FavorisId")
-                        .HasColumnType("int");
 
                     b.Property<string>("categorie")
                         .IsRequired()
@@ -66,23 +49,7 @@ namespace TaskManagerRaph.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FavorisId");
-
                     b.ToTable("Tasks");
-                });
-
-            modelBuilder.Entity("TaskManagerRaph.Models.Tache", b =>
-                {
-                    b.HasOne("TaskManagerRaph.Models.Favoris", "Favoris")
-                        .WithMany("Tasks")
-                        .HasForeignKey("FavorisId");
-
-                    b.Navigation("Favoris");
-                });
-
-            modelBuilder.Entity("TaskManagerRaph.Models.Favoris", b =>
-                {
-                    b.Navigation("Tasks");
                 });
 #pragma warning restore 612, 618
         }

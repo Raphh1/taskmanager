@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar\\RiderProjects\\taskmanager\\TaskManagerRaph.csproj": {}
+    "C:\\Users\\Raphael\\RiderProjects\\TaskManagerRaph\\TaskManagerRaph\\TaskManagerRaph.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar\\RiderProjects\\taskmanager\\TaskManagerRaph.csproj": {
+    "C:\\Users\\Raphael\\RiderProjects\\TaskManagerRaph\\TaskManagerRaph\\TaskManagerRaph.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\RiderProjects\\taskmanager\\TaskManagerRaph.csproj",
+        "projectUniqueName": "C:\\Users\\Raphael\\RiderProjects\\TaskManagerRaph\\TaskManagerRaph\\TaskManagerRaph.csproj",
         "projectName": "TaskManagerRaph",
-        "projectPath": "C:\\Users\\cesar\\RiderProjects\\taskmanager\\TaskManagerRaph.csproj",
-        "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\RiderProjects\\taskmanager\\obj\\",
+        "projectPath": "C:\\Users\\Raphael\\RiderProjects\\TaskManagerRaph\\TaskManagerRaph\\TaskManagerRaph.csproj",
+        "packagesPath": "C:\\Users\\Raphael\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Raphael\\RiderProjects\\TaskManagerRaph\\TaskManagerRaph\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Raphael\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -84,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

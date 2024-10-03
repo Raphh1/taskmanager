@@ -15,4 +15,7 @@ public class Tache
     public string categorie { get; set; }
     
     public string description { get; set; }
+    
+    public int? FavorisId { get; set; }
+    public Favoris Favoris { get; set; }
 }
