@@ -36,6 +36,10 @@ namespace TaskManagerRaph.Migrations
                     b.Property<DateTime>("date")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("task")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

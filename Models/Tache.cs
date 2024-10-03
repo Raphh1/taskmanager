@@ -13,4 +13,6 @@ public class Tache
     public DateTime date { get; set; }
     
     public string categorie { get; set; }
+    
+    public string description { get; set; }
 }

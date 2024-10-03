@@ -154,3 +154,4 @@ C:\Users\Raphael\RiderProjects\TaskManagerRaph\TaskManagerRaph\bin\Debug\net8.0\
 C:\Users\Raphael\RiderProjects\TaskManagerRaph\TaskManagerRaph\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Raphael\RiderProjects\TaskManagerRaph\TaskManagerRaph\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Raphael\RiderProjects\TaskManagerRaph\TaskManagerRaph\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Raphael\RiderProjects\TaskManagerRaph\TaskManagerRaph\obj\Debug\net8.0\TaskManagerRaph.sourcelink.json
