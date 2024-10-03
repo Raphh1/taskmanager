@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TaskManagerRaph.Models.Tache>
+
+@{
+    ViewData["Title"] = "Test API";
+}
+
+<h1>Test API</h1>
+
+<button onclick="getTasks()">Get Tasks</button>
+<div id="output"></div>
+
+@section Scripts {
+    <script>
+        function getTasks() {
+            fetch('/api/task')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('output').innerText = 'Error: ' + error.message;
+                });
+        }
+    </script>
+}
