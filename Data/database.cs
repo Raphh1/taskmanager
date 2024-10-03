@@ -19,6 +19,8 @@ public class TaskContext : DbContext
         DbPath = System.IO.Path.Join(path, "blogging.db");
     }
     
+
+    
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
